@@ -1,1 +1,0 @@
-de website staat hierin je moet alleen de index runnen.
