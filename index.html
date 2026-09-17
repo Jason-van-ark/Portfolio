@@ -180,50 +180,118 @@
   </section>
 
   <section id="contact" class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center bg-black">
+
     <div>
       <p class="text-orange-500 text-sm mb-2">CONTACT</p>
-      <h2 class="text-3xl font-bold mb-4">Neem contact op</h2>
+
+      <h2 class="text-3xl font-bold mb-4">
+        Neem contact op
+      </h2>
+
       <p class="text-zinc-400 text-sm mb-10">
         Heb je een project, vraag of idee? Laat het weten.
       </p>
+
       <div class="space-y-6 text-sm text-zinc-400">
+
         <div class="flex items-center gap-4">
-          <div class="bg-orange-500/20 text-orange-500 p-3 rounded-lg">✉️</div>
+          <div class="bg-orange-500/20 text-orange-500 p-3 rounded-lg">
+            ✉️
+          </div>
+
           <div>
-            <p class="font-semibold text-zinc-200">Email</p>
-            <p>jasonpetervanark@gmail.com</p>
+            <p class="font-semibold text-zinc-200">
+              Email
+            </p>
+
+            <a href="mailto:jasonpetervanark@gmail.com" class="hover:text-orange-500 transition">
+              jasonpetervanark@gmail.com
+            </a>
           </div>
         </div>
+
         <div class="flex items-center gap-4">
-          <div class="bg-orange-500/20 text-orange-500 p-3 rounded-lg">📞</div>
+          <div class="bg-orange-500/20 text-orange-500 p-3 rounded-lg">
+            📞
+          </div>
+
           <div>
-            <p class="font-semibold text-zinc-200">Telefoon</p>
-            <p>+31 6 82275603</p>
+            <p class="font-semibold text-zinc-200">
+              Telefoon
+            </p>
+
+            <a href="tel:+31682275603" class="hover:text-orange-500 transition">
+              +31 6 82275603
+            </a>
           </div>
         </div>
+
         <div class="flex items-center gap-4">
-          <div class="bg-orange-500/20 text-orange-500 p-3 rounded-lg">📍</div>
+          <div class="bg-orange-500/20 text-orange-500 p-3 rounded-lg">
+            📍
+          </div>
+
           <div>
-            <p class="font-semibold text-zinc-200">Locatie</p>
-            <p>Nederland</p>
+            <p class="font-semibold text-zinc-200">
+              Locatie
+            </p>
+
+            <p>
+              Nederland
+            </p>
           </div>
         </div>
+
       </div>
     </div>
+
+
     <div class="bg-zinc-900 p-8 rounded-xl border border-zinc-700 w-full">
-      <form class="grid gap-4">
-        <input class="bg-zinc-800 p-3 rounded border border-zinc-700 focus:outline-none focus:border-orange-500"
-          placeholder="Naam">
-        <input class="bg-zinc-800 p-3 rounded border border-zinc-700 focus:outline-none focus:border-orange-500"
-          placeholder="Email">
-        <textarea rows="4"
-          class="bg-zinc-800 p-3 rounded border border-zinc-700 focus:outline-none focus:border-orange-500"
-          placeholder="Bericht"></textarea>
-        <button class="bg-orange-500 hover:bg-orange-600 transition py-3 rounded font-semibold text-white mt-2">
+
+      <form action="https://formspree.io/f/mdekollw" method="POST" class="grid gap-4">
+
+        <div>
+          <label for="name" class="block text-sm font-medium text-zinc-300 mb-2">
+            Naam
+          </label>
+
+          <input id="name" type="text" name="name" required autocomplete="name" placeholder="Je naam"
+            class="w-full bg-zinc-800 p-3 rounded border border-zinc-700 focus:outline-none focus:border-orange-500 transition">
+        </div>
+
+
+        <div>
+          <label for="email" class="block text-sm font-medium text-zinc-300 mb-2">
+            Email
+          </label>
+
+          <input id="email" type="email" name="email" required autocomplete="email" placeholder="jouw@email.nl"
+            class="w-full bg-zinc-800 p-3 rounded border border-zinc-700 focus:outline-none focus:border-orange-500 transition">
+        </div>
+
+
+        <div>
+          <label for="message" class="block text-sm font-medium text-zinc-300 mb-2">
+            Bericht
+          </label>
+
+          <textarea id="message" name="message" rows="5" required placeholder="Schrijf hier je bericht..."
+            class="w-full bg-zinc-800 p-3 rounded border border-zinc-700 focus:outline-none focus:border-orange-500 transition resize-none"></textarea>
+        </div>
+
+
+        <input type="hidden" name="_subject" value="Nieuw bericht via mijn portfolio">
+
+
+        <button type="submit"
+          class="bg-orange-500 hover:bg-orange-600 transition py-3 rounded font-semibold text-white mt-2">
           Verstuur bericht
         </button>
+
       </form>
+
     </div>
+
   </section>
 
 </body>
